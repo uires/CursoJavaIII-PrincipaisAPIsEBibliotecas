@@ -1,10 +1,10 @@
 package br.com.caelum.banco.conta;
 
 public class Conta {
-	private int agencia;
-	private String nome;
-	private double saldo;
-	private String cpf;
+	protected int agencia;
+	protected String nome;
+	protected double saldo;
+	protected String cpf;
 
 	// Getters e Setters: 
 	public int getAgencia() {
