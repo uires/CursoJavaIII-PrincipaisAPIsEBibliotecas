@@ -15,20 +15,22 @@ public class Conta {
 		this.agencia = agencia;
 	}
 
-	public String getNome() {
-		return nome;
+	public void getNome() {
+		System.out.println("Nome: " + this.nome);
 	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
+		getNome();
 	}
 
-	public double getSaldo() {
-		return saldo;
+	public void getSaldo() {
+		System.out.println("Seu saldo é: R$" + this.saldo);
 	}
 
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
+		getSaldo();
 	}
 
 	public String getCpf() {
