@@ -1,3 +1,5 @@
+package br.com.caelum.banco.conta;
+
 public class Conta {
 	private int agencia;
 	private String nome;
