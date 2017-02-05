@@ -13,9 +13,9 @@ public class PrincipalTeste {
 		
 		Conta cP = new ContaPoupanca();
 		
-		cP.setSaldo(3002.1);
+		
 		c1.setSaldo(332.1);
-		c1.setSaldo(3321.2);
+	
 		
 		GuardaObjetos armario = new GuardaObjetos();
 		armario.adiciona(c1);
