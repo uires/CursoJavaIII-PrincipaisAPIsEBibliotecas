@@ -4,8 +4,9 @@ public class testeIO {
 	public static void main(String[] args) {
 	
             String s = "fj11";
-            s.replaceAll("1", "2");
+            String outra = s.replaceAll("1", "2");
             System.out.println(s);
+            System.out.println(outra);
         }
 
     
