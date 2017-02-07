@@ -1,6 +1,6 @@
 package br.com.caelum.banco.conta;
 
-public class Conta {
+public abstract class Conta {
 	protected int agencia;
 	protected String nome;
 	protected double saldo;
@@ -24,13 +24,13 @@ public class Conta {
 		getNome();
 	}
 
-	public void getSaldo() {
-		System.out.println("Seu saldo é: R$" + this.saldo);
+	public String toString() {
+		return "Seu saldo é: R$" + this.saldo;
 	}
 
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
-		getSaldo();
+		toString();
 	}
 
 	public String getCpf() {

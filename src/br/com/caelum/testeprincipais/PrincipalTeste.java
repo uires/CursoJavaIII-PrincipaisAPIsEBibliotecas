@@ -13,7 +13,7 @@ public class PrincipalTeste {
 		
 		Conta cP = new ContaPoupanca();
 		
-		
+				
 		c1.setSaldo(332.1);
 	
 		
@@ -23,6 +23,10 @@ public class PrincipalTeste {
 		System.out.println(armario.pega(0));
 		armario.adiciona(cP);
 		System.out.println(armario.pega(2));
+		cP.setSaldo(3021.1);
+		System.out.println(cP.toString());
+		
+		
 	}
 
 }
