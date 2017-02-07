@@ -13,9 +13,12 @@ public class exercicio {
 			    } else {
 			        System.out.println("diferente");
 			    }
+			    
+			    
+			    System.out.println(15 - 7);
 		}
 		
-
+		
 	}
 
 
