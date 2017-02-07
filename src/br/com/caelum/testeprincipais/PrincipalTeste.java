@@ -1,6 +1,7 @@
 package br.com.caelum.testeprincipais;
 
 import br.com.caelum.banco.conta.Conta;
+import br.com.caelum.banco.conta.ContaCorrente;
 import br.com.caelum.banco.conta.ContaPoupanca;
 import br.com.caelum.banco.conta.GuardaObjetos;
 
@@ -8,8 +9,8 @@ public class PrincipalTeste {
 
 	public static void main(String[] args) {
 		
-		Conta c1 = new Conta();
-		Conta c2 = new Conta();
+		Conta c1 = new ContaCorrente();
+		Conta c2 = new ContaPoupanca();
 		
 		Conta cP = new ContaPoupanca();
 		

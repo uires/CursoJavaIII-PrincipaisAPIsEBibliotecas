@@ -5,10 +5,28 @@ public abstract class Conta {
 	protected String nome;
 	protected double saldo;
 	protected String cpf;
+	private int numero;
 
-	// Getters e Setters: 
+	// Getters e Setters:
+
+	public boolean equals(Object obj) {
+		Conta outraConta = (Conta) obj;
+		return this.numero == outraConta.numero;
+
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	
+	
+
 	public int getAgencia() {
-		return agencia;
+		return this.agencia;
 	}
 
 	public void setAgencia(int agencia) {
@@ -41,21 +59,4 @@ public abstract class Conta {
 		this.cpf = cpf;
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
