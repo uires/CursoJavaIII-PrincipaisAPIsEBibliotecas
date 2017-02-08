@@ -4,18 +4,16 @@ public class exercicio {
 	public static void main(String[] args) {
 		
 
-		String ttexto = "Jesus Cristo";
+		String ttexto = "Socorram-me, subi no ônibus em Marrocos ";
 		
 		
 		
 		
-		for(int i =0; i<= ttexto.length();i++){
-			System.out.println(ttexto.charAt(i));
-			
-			
-			
+		for(int i = ttexto.length() - 1; i >= 0;i--){
+			System.out.print(ttexto.charAt(i));
+						
 		}
-
+		System.out.println("");
 		
 	
 		
