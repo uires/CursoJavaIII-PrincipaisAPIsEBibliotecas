@@ -1,17 +1,29 @@
 package br.com.caelum.exercicios;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+
 public class testeIO {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+
+		InputStream is = new FileInputStream("leitura.txt");
+		InputStreamReader isr = new InputStreamReader(is);
+		BufferedReader br = new BufferedReader(isr);
+		
+		String linha = br.readLine();
+		while(linha != null){
+			System.out.println(linha);
+			linha = br.readLine();
+		}
+		
+		br.close();
+			
 	
-		 Integer x1 = new Integer(10);
-		    Integer x2 = new Integer(10);
-
-		    if (x1 == x2) {
-		        System.out.println("igual");
-		    } else {
-		        System.out.println("diferente");
-		    }
 	}
-
 }
 
