@@ -11,9 +11,10 @@ import java.io.InputStreamReader;
 public class testeIO {
 	public static void main(String[] args) throws IOException {
 
-		InputStream is = new FileInputStream("leitura.txt");
+		InputStream is = System.in;
 		InputStreamReader isr = new InputStreamReader(is);
 		BufferedReader br = new BufferedReader(isr);
+		System.out.println("Digite seu texto: ");
 		
 		String linha = br.readLine();
 		while(linha != null){
@@ -22,8 +23,7 @@ public class testeIO {
 		}
 		
 		br.close();
-			
-	
+
 	}
 }
 
