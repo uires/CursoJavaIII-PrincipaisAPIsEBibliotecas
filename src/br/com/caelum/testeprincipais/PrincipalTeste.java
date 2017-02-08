@@ -9,17 +9,17 @@ public class PrincipalTeste {
 
 	public static void main(String[] args) {
 		
-		Conta c1 = new ContaCorrente();
 		Conta c2 = new ContaPoupanca();
 		
 		Conta cP = new ContaPoupanca();
 		
-				
-		c1.setSaldo(332.1);
+		
+			
+		
 	
 		
 		GuardaObjetos armario = new GuardaObjetos();
-		armario.adiciona(c1);
+		
 		armario.adiciona(c2);
 		System.out.println(armario.pega(0));
 		armario.adiciona(cP);

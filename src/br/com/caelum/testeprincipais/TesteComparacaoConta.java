@@ -7,10 +7,8 @@ public class TesteComparacaoConta {
 
 	public static void main(String[] args) {
 		
-		Conta c1 = new ContaCorrente(1);
-		Conta c2 = new ContaCorrente(1);
-		
-		
+		Conta Cc = new ContaCorrente();
+		Conta Cc = new ContaCorrente();
 		
 		if(c1 == c2){
 			System.out.println("Iguallllllllll !");
