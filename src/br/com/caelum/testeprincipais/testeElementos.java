@@ -14,14 +14,8 @@ public class testeElementos {
 		nomes.add("Bela");
 		nomes.add("Laisa");
 		nomes.add("Nilzete");
-
-		Collections.sort(nomes);
+		System.out.println(nomes.contains("Uires"));
 		
-		
-		System.out.println(nomes.get(0));
-		System.out.println(nomes.get(1));
-		System.out.println(nomes.get(2));
-		System.out.println(nomes.get(3));
 		
 	}
 }
