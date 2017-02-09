@@ -1,7 +1,7 @@
 package br.com.caelum.banco.conta;
 
 
-public class ContaPoupanca extends Conta {
+public class ContaPoupanca extends Conta implements Comparable<ContaPoupanca> {
 	
 
 	public double getBonus() {
@@ -14,6 +14,11 @@ public class ContaPoupanca extends Conta {
 		
 		this.saldo = this.saldo + (this.saldo * taxa);
 		
+	}
+
+	@Override
+	public int compareTo(ContaPoupanca outra) {
+		return this.getNumero() - outra.getNumero();
 	}
 
 }
