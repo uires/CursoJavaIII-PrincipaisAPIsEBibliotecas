@@ -15,7 +15,7 @@ public class Teste {
         c2.deposita(3000);
 
         // cria o mapa
-        Map mapaDeContas = new HashMap();
+        Map<String, Conta> mapaDeContas = new HashMap<String, Conta>();
 
         // adiciona duas chaves e seus valores
         mapaDeContas.put("diretor", c1);
