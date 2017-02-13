@@ -1,5 +1,7 @@
 package br.com.caelum.testeprincipais;
 
+import java.util.ArrayList;
+
 import br.com.caelum.banco.conta.Conta;
 import br.com.caelum.banco.conta.ContaCorrente;
 import br.com.caelum.banco.conta.ContaPoupanca;
@@ -9,25 +11,25 @@ public class PrincipalTeste {
 
 	public static void main(String[] args) {
 		
-		Conta c2 = new ContaPoupanca(0, null, 0);
+		Integer total = 30000;
+		System.out.println("Iniciando processo :::::::::- ");
+		ArrayList<Integer> numero = new ArrayList<>();
+		long inicio = System.currentTimeMillis();
 		
-		Conta cP = new ContaPoupanca(0, null, 0);
+		for(int i = 0; i <= total;i++){
+			numero.add(i);
+			System.out.println(numero.get(i));
+		}
 		
-		
+		for(int i = 0; i <= total;i++){
 			
+			System.out.println(numero.contains(i));
+			
+		}	
 		
-	
-		
-		GuardaObjetos armario = new GuardaObjetos();
-		
-		armario.adiciona(c2);
-		System.out.println(armario.pega(0));
-		armario.adiciona(cP);
-		System.out.println(armario.pega(2));
-		cP.setSaldo(3021.1);
-		System.out.println(cP.toString());
-		
-		
+		long fim = System.currentTimeMillis();
+        long tempo = fim - inicio;
+        System.out.println("Tempo gasto: " + tempo);
 	}
 
 }
