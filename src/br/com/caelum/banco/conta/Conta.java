@@ -44,6 +44,9 @@ public abstract class Conta implements Comparable<Conta> {
 		this.saldo = saldo;
 
 	}
+	public String getSaldo(){
+		return "Saldo é: " + this.saldo;
+	}
 
 	public String getCpf() {
 		return cpf;
