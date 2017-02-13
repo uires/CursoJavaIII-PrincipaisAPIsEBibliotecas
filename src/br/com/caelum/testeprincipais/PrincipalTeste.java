@@ -9,9 +9,9 @@ public class PrincipalTeste {
 
 	public static void main(String[] args) {
 		
-		Conta c2 = new ContaPoupanca();
+		Conta c2 = new ContaPoupanca(0, null, 0);
 		
-		Conta cP = new ContaPoupanca();
+		Conta cP = new ContaPoupanca(0, null, 0);
 		
 		
 			
