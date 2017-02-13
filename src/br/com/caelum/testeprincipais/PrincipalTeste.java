@@ -1,6 +1,12 @@
 package br.com.caelum.testeprincipais;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Scanner;
+
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
 
 import br.com.caelum.banco.conta.Conta;
 import br.com.caelum.banco.conta.ContaCorrente;
@@ -10,26 +16,29 @@ import br.com.caelum.banco.conta.GuardaObjetos;
 public class PrincipalTeste {
 
 	public static void main(String[] args) {
+		System.out.println("Digite o valor que quer Calcular: ");
+		Scanner ler = new Scanner(System.in);
+		long total;
+		total = ler.nextInt();
 		
-		Integer total = 30000;
+		
+		
 		System.out.println("Iniciando processo :::::::::- ");
-		ArrayList<Integer> numero = new ArrayList<>();
+		Collection<Integer> numero = new HashSet<>();
 		long inicio = System.currentTimeMillis();
-		
+
 		for(int i = 0; i <= total;i++){
 			numero.add(i);
-			System.out.println(numero.get(i));
+		 }
+
+		for (int i = 0; i <= total; i++) {
+			numero.contains(i);
+
 		}
-		
-		for(int i = 0; i <= total;i++){
-			
-			System.out.println(numero.contains(i));
-			
-		}	
-		
+
 		long fim = System.currentTimeMillis();
-        long tempo = fim - inicio;
-        System.out.println("Tempo gasto: " + tempo);
+		long tempo = fim - inicio;
+		System.out.println("Tempo gasto: " + tempo);
 	}
 
 }
