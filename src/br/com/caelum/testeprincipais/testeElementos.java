@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Random;
 
 import javax.lang.model.element.Name;
 
@@ -16,16 +17,8 @@ import br.com.caelum.banco.conta.ContaPoupanca;
 
 public class testeElementos {
 	public static void main(String[] args) {
-		ArrayList<String> nomes = new ArrayList<String>();
+	
 
-		nomes.add("Uires");
-		nomes.add("Bela");
-		nomes.add("Laisa");
-		nomes.add("Nilzete");
-		Collections.sort(nomes);
-		for (String nome : nomes) {
-			System.out.println(nome);
-		}
 		System.out.println("......................-");
 		List<Conta> contas = new ArrayList<>();
 
@@ -39,13 +32,33 @@ public class testeElementos {
 
 		// System.out.println(contas.get(0));
 		// System.out.println(contas.get(1));
-		// System.out.println(contas.get(2));
+		// System.out.println(contas.get(2));		
+		
+		Random random = new Random();
+		
+		Conta c4 = new ContaPoupanca(random.nextInt(2000), "Caio" ,123 ,"224.227.441-42");
+	    c1.deposita(random.nextInt(10000) + random.nextDouble());
+	    contas.add(c4);	
+	    
+	    Conta c5 = new ContaCorrente(random.nextInt(2000), "Laisa Karoline Oliviera", 332, "224.447.552-42");
+	    contas.add(c5);
+				
 
 		Collections.sort(contas);
 		for (Conta c : contas) {
 			System.out.println(c);
 			c.espaco();
 		}
+		
+		
+		
+				
+		
+		
+		
+		
+		
+		
 
 	}
 }
