@@ -33,6 +33,8 @@ public class testeElementos {
 		// System.out.println(contas.get(0));
 		// System.out.println(contas.get(1));
 		// System.out.println(contas.get(2));		
+		Conta cc = new ContaPoupanca(1132, "Uires", 123, "223.111.845-01");
+		contas.add(cc);
 		
 		Random random = new Random();
 		
@@ -50,12 +52,7 @@ public class testeElementos {
 			c.espaco();
 		}
 		
-		
-		
 				
-		
-		
-		
 		
 		
 		

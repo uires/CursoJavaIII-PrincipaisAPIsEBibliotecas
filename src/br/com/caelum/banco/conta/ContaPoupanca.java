@@ -24,11 +24,7 @@ public class ContaPoupanca extends Conta {
 
 	@Override
 	public int compareTo(Conta outra) {
-		if(this.saldo < outra.saldo)return -1;
-		if(this.saldo < outra.saldo)return 1;
-		return 0;
+		return this.nome.compareTo(outra.nome);
 	}
-	
-
 	
 }
