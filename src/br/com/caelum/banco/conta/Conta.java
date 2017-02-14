@@ -18,17 +18,62 @@ public abstract class Conta implements Comparable<Conta> {
 	}
 
 	// Getters e Setters:
-
+	
+	
 	public int getAgencia() {
 		return this.agencia;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + agencia;
+		result = prime * result + ((cpf == null) ? 0 : cpf.hashCode());
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		result = prime * result + numero;
+		long temp;
+		temp = Double.doubleToLongBits(saldo);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Conta other = (Conta) obj;
+		if (agencia != other.agencia)
+			return false;
+		if (cpf == null) {
+			if (other.cpf != null)
+				return false;
+		} else if (!cpf.equals(other.cpf))
+			return false;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
+		if (numero != other.numero)
+			return false;
+		if (Double.doubleToLongBits(saldo) != Double
+				.doubleToLongBits(other.saldo))
+			return false;
+		return true;
 	}
 
 	public void setAgencia(int agencia) {
 		this.agencia = agencia;
 	}
 
-	public void getNome() {
+	public String getNome() {
 		System.out.println("Nome: " + this.nome);
+		return nome;
 	}
 
 	public void setNome(String nome) {

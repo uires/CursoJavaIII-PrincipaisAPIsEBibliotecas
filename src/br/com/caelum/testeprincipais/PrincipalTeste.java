@@ -11,7 +11,7 @@ import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
 import br.com.caelum.banco.conta.Conta;
 import br.com.caelum.banco.conta.ContaCorrente;
 import br.com.caelum.banco.conta.ContaPoupanca;
-import br.com.caelum.banco.conta.GuardaObjetos;
+
 
 public class PrincipalTeste {
 
