@@ -17,7 +17,6 @@ import br.com.caelum.banco.conta.ContaPoupanca;
 
 public class testeElementos {
 	public static void main(String[] args) {
-	
 
 		System.out.println("......................-");
 		List<Conta> contas = new ArrayList<>();
@@ -29,33 +28,25 @@ public class testeElementos {
 		contas.add(c1);
 		contas.add(c2);
 		contas.add(c3);
-
-		// System.out.println(contas.get(0));
-		// System.out.println(contas.get(1));
-		// System.out.println(contas.get(2));		
 		Conta cc = new ContaPoupanca(1132, "Uires", 123, "223.111.845-01");
 		contas.add(cc);
-		
+
 		Random random = new Random();
-		
-		Conta c4 = new ContaPoupanca(random.nextInt(2000), "Caio" ,123 ,"224.227.441-42");
-	    c1.deposita(random.nextInt(10000) + random.nextDouble());
-	    contas.add(c4);	
-	    
-	    Conta c5 = new ContaCorrente(random.nextInt(2000), "Laisa Karoline Oliviera", 332, "224.447.552-42");
-	    contas.add(c5);
-				
+
+		Conta c4 = new ContaPoupanca(random.nextInt(2000), "Caio", 123,
+				"224.227.441-42");
+		c1.deposita(random.nextInt(10000) + random.nextDouble());
+		contas.add(c4);
+
+		Conta c5 = new ContaCorrente(random.nextInt(2000),
+				"Laisa Karoline Oliviera", 332, "224.447.552-42");
+		contas.add(c5);
 
 		Collections.sort(contas);
 		for (Conta c : contas) {
 			System.out.println(c);
 			c.espaco();
 		}
-		
-				
-		
-		
-		
 
 	}
 }
