@@ -2,21 +2,21 @@ package br.com.caelum.exercicios;
 
 import java.util.Collection;
 
-public class ProduzMensagem {
-	public int inicio;
-	public int fim;
-	public Collection<String> mensagem;
+public class ProduzMensagem implements Runnable {
+	private int inicioDaThread;
+	private int fimDaThread;
+	private Collection<String> mensagemParaThread;
 	
 	
 	public ProduzMensagem(int inico, int fim, Collection<String> mensagem){
-		this.inicio = inicio;
-		this.fim = fim;
-		this.mensagem = mensagem;		
+		this.inicioDaThread = inicioDaThread;
+		this.fimDaThread = fimDaThread;
+		this.mensagemParaThread = mensagem;		
 		
 	}
 	public void run(){
-		for(int i = inicio ;i < fim; i++){
-			System.out.println("Mensagem - " + i);
+		for(int i = inicioDaThread ;i < fimDaThread; i++){
+			mensagemParaThread.add("Mensagem - " + i);
 		}
 	}
 }

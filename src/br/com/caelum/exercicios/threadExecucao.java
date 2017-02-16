@@ -1,30 +1,28 @@
 package br.com.caelum.exercicios;
 
+import java.util.*;
+
+
 public class threadExecucao {
-	public static void main (String[] args){
+	public static void main(String[] args) throws InterruptedException {
+		Collection<String> mensagemParaThread = new ArrayList<String>();
 		
-		thread runner = new thread();
-		runner.run();
-		Thread runnerex = new Thread(runner);
-		runnerex.start();
-		thread2 runner2 = new thread2();
-		runner2.run();
-		Thread ruunrex2 = new Thread(runner2);
-		ruunrex2.start();
+		Thread thread1 = new Thread(new ProduzMensagem(0, 3000, mensagemParaThread));
+		Thread thread2 = new Thread(new ProduzMensagem(0, 10003, mensagemParaThread));
+		Thread thread3 = new Thread(new ProduzMensagem(0, 10000, mensagemParaThread));
+		
+		thread1.start();
+			thread2.start();
+				thread3.start();
+		// botando join para maior controle da thread::
+		thread1.join();
+		thread2.join();
+		thread3.join();
+		
+		System.out.println("Produzindo Mensagens :: ");
 		
 		
-		 asd p1 = new asd();    
-         p1.setId(1);
-
-         Thread t1 = new Thread(p1);
-         t1.start();
-
-         asd p2 = new asd();    
-         p2.setId(2);
-
-         Thread t2 = new Thread(p2);
-         t2.start();                
-
 		
+
 	}
 }
