@@ -13,5 +13,18 @@ public class threadExecucao {
 		ruunrex2.start();
 		
 		
+		 asd p1 = new asd();    
+         p1.setId(1);
+
+         Thread t1 = new Thread(p1);
+         t1.start();
+
+         asd p2 = new asd();    
+         p2.setId(2);
+
+         Thread t2 = new Thread(p2);
+         t2.start();                
+
+		
 	}
 }
