@@ -21,7 +21,7 @@ public class ThreadExecucao {
 		t2.join();
 		t3.join();
 		
-				for(int i= 0; i < 15000;i++){
+		for(int i= 0; i < 15000;i++){
 			if(!mensagemDaThread.contains("Mensagem para teste da Thread: : " + i)){				
 				throw new IllegalStateException("Mensagem errada !!!" + i);			
 			}		
