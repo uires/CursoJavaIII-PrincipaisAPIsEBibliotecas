@@ -14,7 +14,7 @@ public class exercicio {
 			for (int i = 1000; i >= 1; i--) {
 			conjunto.add(i);
 		}
-			Collections.reverse(conjunto);	
+		Collections.reverse(conjunto);	
 		for (Integer i : conjunto) {
 			System.out.print(i + " ");
 		}
