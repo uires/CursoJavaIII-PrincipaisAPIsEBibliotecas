@@ -1,6 +1,6 @@
 package br.com.caelum.exercicios;
 
-public class asd implements Runnable {
+public class Asd implements Runnable {
 
     private int id;           
 
