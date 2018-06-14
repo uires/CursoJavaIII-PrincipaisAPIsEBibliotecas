@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 
-public class testeIO {
+public class TesteIO {
 	public static void main(String[] args) throws IOException {
 		
 		Scanner entrada = new Scanner(System.in);
