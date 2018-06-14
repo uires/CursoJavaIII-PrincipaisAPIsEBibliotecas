@@ -1,6 +1,6 @@
 package br.com.caelum.exercicios;
 
-public class parseInt {
+public class ParseInt {
 
 	public static void main(String[] args) {
 		String numero = "762";
