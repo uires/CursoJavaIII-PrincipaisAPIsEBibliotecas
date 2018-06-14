@@ -4,7 +4,7 @@ package br.com.caelum.exercicios;
 import java.util.Collection;
 import java.util.Vector;
 
-public class threadExecucao {
+public class ThreadExecucao {
 
 	public static void main(String[] args) throws InterruptedException {
 		Collection<String> mensagemDaThread = new Vector<String>();
